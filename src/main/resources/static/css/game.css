@@ -1,0 +1,128 @@
+.card {
+  flex-direction: inherit !important;
+}
+
+.m-card {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
+}
+
+.other-hands {
+  max-height: 100px;
+  margin: 10px auto 0 auto;
+}
+
+.other-hands .m-card {
+  width: 60px;
+  height: 100px;
+  margin-left: -20px;
+}
+
+.other-hands-90 {
+  max-height: 325px;
+  padding-top: 17px;
+  margin: auto 0;
+}
+
+.other-hands-left {
+  margin-left: 10px;
+}
+
+.other-hands-right {
+  margin-right: 10px;
+}
+
+.other-hands-90 .m-card {
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin-top: -35px;
+}
+
+.my-hands {
+  position: absolute;
+  max-height: 110px;
+  font-size: 35px;
+  word-break: normal;
+  left: 12px;
+  top: 490px;
+}
+
+.my-hands .m-card {
+  width: 80px;
+  height: 110px;
+}
+
+.card-type {
+  position: absolute;
+  top: 240px;
+  font-size: 35px;
+  word-break: normal;
+}
+
+.card-type .m-card {
+  width: 80px;
+  height: 110px;
+}
+
+.action {
+  position: absolute;
+  left: 487px;
+  top: 410px;
+}
+
+#button-pass {
+  margin-left: 50px;
+}
+
+.timer {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  padding: 1px;
+  border-radius: 100%;
+  border: 2px solid red;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  top: 30px;
+  left: 30px;
+}
+
+.card-selected {
+  box-shadow: 0 0 .3rem rgb(0, 204, 255) !important;
+}
+
+.m-card:focus {
+  outline: none;
+}
+
+.black-cover {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
+.end-window {
+  position: absolute;
+  margin: 65px 40px;
+  height: 450px;
+}
+
+.end-hands .m-card {
+  margin-top: 3px;
+  height: 50px;
+  width: 30px;
+}
+
+#button-end {
+  position: absolute;
+  top: 480px;
+  left: 500px;
+}

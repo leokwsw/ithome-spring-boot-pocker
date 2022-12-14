@@ -1,0 +1,8 @@
+.room-list {
+  height: 450px;
+  width: 1000px;
+  margin: -20px auto 0 auto;
+  padding: 35px;
+  text-align: center;
+  z-index: 1;
+}

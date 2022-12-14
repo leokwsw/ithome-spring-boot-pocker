@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}"
+>
+<head>
+  <meta charset="UTF-8">
+  <title>Cards</title>
+</head>
+<body>
+<div layout:fragment="content" class="card game-window">
+  <div class="card login-panel">
+    <div class="text-center">
+      <div class="card page-title">
+        <div class="h3">登入</div>
+      </div>
+    </div>
+    <br>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="username">帳號</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <label for="password">密碼</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <div th:if="${param.error}" class="alert alert-danger">
+        <div>帳號或密碼錯誤</div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">登入</button>
+      </div>
+      <br>
+      <small class="form-text text-center">
+        還沒註冊嗎，<a href="/register">註冊</a>
+      </small>
+    </form>
+  </div>
+</div>
+</body>
+</html>

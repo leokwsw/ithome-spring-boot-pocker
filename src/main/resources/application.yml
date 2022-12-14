@@ -1,0 +1,37 @@
+server:
+ address: 0.0.0.0
+ port: 8080
+ error:
+  include-binding-errors: always
+  include-message: always
+ forward-headers-strategy: framework
+
+spring:
+ datasource:
+  username: root
+  #   password:
+  url: jdbc:mysql://192.168.1.29:3306/cards
+  driver-class-name: com.mysql.cj.jdbc.Driver
+ main:
+  allow-circular-references: true
+  allow-bean-definition-overriding: true
+ jpa:
+  hibernate:
+   ddl-auto: update
+  show-sql: true
+  generate-ddl: true
+  database-platform: org.hibernate.dialect.MySQL5Dialect
+  database: mysql
+  properties:
+   javax:
+    persistence:
+     validation:
+      mode: none
+ thymeleaf:
+  prefix: classpath:/templates/
+ web:
+  resources:
+   static-locations: classpath:/static/
+ mvc:
+  pathmatch:
+   matching-strategy: ant_path_matcher

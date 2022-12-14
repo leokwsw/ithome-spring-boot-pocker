@@ -1,0 +1,22 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0 !important;
+}
+
+.game-window {
+  height: 630px;
+  width: 1200px;
+  margin: 20px auto 0 auto;
+  border-width: 10px;
+}
+
+.page-title {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  z-index: 9;
+}
+
+.login-panel, .register-panel {
+  margin: 30px auto;
+  padding: 30px 150px 30px 150px;
+}

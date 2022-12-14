@@ -1,0 +1,21 @@
+.close-button {
+  display: flex;
+  margin: -21px -20px -20px auto;
+  background-color: #fff !important;
+  border-radius: 100%;
+  font-size: 40px;
+  color: #dc3545;
+  opacity: 1 !important;
+  z-index: 999;
+}
+
+.close-button:hover {
+  color: #C72334;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}"
+>
+<head>
+  <meta charset="UTF-8">
+  <title>Cards</title>
+</head>
+<body>
+<div layout:fragment="content" class="card game-window">
+  <div class="card register-panel">
+    <div class="text-center">
+      <div class="card page-title">
+        <div class="h3">註冊</div>
+      </div>
+    </div>
+    <br>
+    <form action="/register" method="post" th:object="${user}">
+      <div class="form-group">
+        <label for="email">信箱</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" th:field="*{email}">
+      </div>
+      <div class="form-group">
+        <label for="username">帳號</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+               th:field="*{username}">
+      </div>
+      <div class="form-group">
+        <label for="password">密碼</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+               th:field="*{password}">
+      </div>
+      <div th:if="${error}" class="alert alert-danger">
+        <div th:text="${error}"></div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">註冊</button>
+      </div>
+      <br>
+      <small class="form-text text-center">
+        已經有帳號，<a href="/login">登入</a>
+      </small>
+    </form>
+  </div>
+</div>
+</body>
+</html>
