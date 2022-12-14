@@ -9,8 +9,8 @@ server:
 spring:
  datasource:
   username: root
-  #   password:
-  url: jdbc:mysql://192.168.1.29:3306/cards
+  password: password
+  url: jdbc:mysql://localhost:3306/cards
   driver-class-name: com.mysql.cj.jdbc.Driver
  main:
   allow-circular-references: true
